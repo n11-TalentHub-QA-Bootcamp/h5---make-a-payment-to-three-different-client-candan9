@@ -5,4 +5,5 @@ import org.openqa.selenium.By;
 
 public class HomePageElements {
     public static Target PAYMENT_BTN = Target.the("payment button").located(By.id("makePaymentButton"));
+
 }

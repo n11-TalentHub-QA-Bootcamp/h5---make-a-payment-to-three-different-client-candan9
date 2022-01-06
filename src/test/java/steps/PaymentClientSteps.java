@@ -1,5 +1,6 @@
 package steps;
 
+import io.appium.java_client.HidesKeyboard;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
@@ -33,10 +34,10 @@ public class PaymentClientSteps {
     @When("I click make payment button for deposit")
     public void i_click_make_payment_button_for_deposit() {
         actor.attemptsTo(Payment.open());
+
     }
     @When("User make a deposit entering payment details")
     public void user_make_a_deposit_entering_payment_details() {
-
     }
     @Then("User should check to balance")
     public void user_should_check_to_balance() {

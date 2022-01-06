@@ -24,6 +24,7 @@ public class LoginToEriBank implements Task {
     @Step("{0} logins to the eribank")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
+                Click.on(LoginPageElements.ERROR_BUTTON),
                 Click.on(LoginPageElements.USERNAME_FIELD),
                 SendKeys.of(this.username).into(LoginPageElements.USERNAME_FIELD),
                 Click.on(LoginPageElements.PASSWORD_FIELD),

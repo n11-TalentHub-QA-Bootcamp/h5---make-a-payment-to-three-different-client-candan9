@@ -13,8 +13,8 @@ public class PaymentPageElements {
             .located(By.id("amount"));
     public static Target COUNTRY_BUTTON = Target.the("Country Button")
             .located(By.id("countryButton"));
-    public static Target COUNTRY_VALUE = Target.the("Country Value")
-            .located(By.id("text1"));
+    //public static Target COUNTRY_VALUE = Target.the("Country Value")
+         //   .located(By.id("text1"));
     public static Target PAYMENT_BUTTON = Target.the("Payment Button")
             .located(By.id("sendPaymentButton"));
     public static Target CONFIRM_BUTTON = Target.the("Confirm Button")
